@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-minify-inline/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-minify-inline/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-minify-inline/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-minify-inline/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-minify-inline/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-minify-inline/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-gulp-minify-inline/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-gulp-minify-inline/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-minify-inline/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-minify-inline/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-gulp-minify-inline/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-minify-inline/build/coverage.html/index.html)
 
@@ -35,17 +35,35 @@
 ```json
 
 {
-    "name": "gulp-minify-inline",
-    "description": "Gulp plugin to uglify inline JS and minify inline CSS",
-    "version": "0.2.1",
     "author": {
         "name": "Alexander Kuznetsov",
         "url": "http://kuznetsov.by/"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/shkuznetsov/gulp-minify-inline.git"
+    "bugs": {
+        "url": "https://github.com/shkuznetsov/gulp-minify-inline/issues"
     },
+    "dependencies": {
+        "cheerio": "^0.20.0",
+        "clean-css": "^3.4.12",
+        "gulp-util": "^3.0.7",
+        "through2": "^2.0.1",
+        "uglify-js": "^2.6.2"
+    },
+    "description": "Gulp plugin to uglify inline JS and minify inline CSS",
+    "devDependencies": {
+        "chai": "~3.5.0",
+        "gulp": "~3.9.1",
+        "mocha": "~2.4.5"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "f00fc752b463080649d48bf4a679dd8d74feb60f",
+        "tarball": "https://registry.npmjs.org/gulp-minify-inline/-/gulp-minify-inline-0.2.1.tgz"
+    },
+    "engines": {
+        "node": ">= 0.10"
+    },
+    "gitHead": "d31d0487ef704171930edaa621a75f1e0d1d6736",
     "homepage": "https://github.com/shkuznetsov/gulp-minify-inline",
     "keywords": [
         "gulpplugin",
@@ -58,30 +76,24 @@
         "css",
         "style"
     ],
+    "license": "MIT",
     "main": "./index.js",
-    "dependencies": {
-        "gulp-util": "^3.0.7",
-        "cheerio": "^0.20.0",
-        "uglify-js": "^2.6.2",
-        "clean-css": "^3.4.12",
-        "through2": "^2.0.1"
-    },
-    "devDependencies": {
-        "gulp": "~3.9.1",
-        "chai": "~3.5.0",
-        "mocha": "~2.4.5"
+    "maintainers": [
+        {
+            "name": "shkuznetsov"
+        }
+    ],
+    "name": "gulp-minify-inline",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shkuznetsov/gulp-minify-inline.git"
     },
     "scripts": {
         "test": "mocha"
     },
-    "engines": {
-        "node": ">= 0.10"
-    },
-    "license": "MIT",
-    "readmeFilename": "README.md",
-    "bugs": {
-        "url": "https://github.com/shkuznetsov/gulp-minify-inline/issues"
-    }
+    "version": "0.2.1",
+    "bin": {}
 }
 ```
 
